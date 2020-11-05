@@ -2,14 +2,22 @@
 #include <stdlib.h>
 
 /* run this program using the console pauser or add your own getch, system("pause") or input loop */
-
-int main(int argc, char *argv[]) {
-	int i =10;
-	char c=69;
-	float f=12.3;
+void swap(int x,int y){
+	int temp;
+	temp = x;
+	x=y;
+	y=temp;
 	
-	printf("i : %i %p \n", i,&i);
-	printf("c : %c %p \n", c,&c);
-	printf("f : %f %p \n", f,&f);
+}
+
+
+void main(int argc, char *argv[]) {
+	
+	int a = 3;
+	int b = 5;
+	
+	swap(a,b);
+	printf("a:%i, b:%i\n", a,b);
+	
 	return 0;
 }
